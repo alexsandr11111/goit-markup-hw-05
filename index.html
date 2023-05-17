@@ -70,7 +70,7 @@
       <section class="heroy">
         <div class="container heroy-container">
           <h1 class="heroy-title">Effective Solutions for Your Business</h1>
-          <button class="button heroy-button" type="button">
+          <button class="button heroy-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -457,5 +457,17 @@
     </footer>
 
     <!------------------ /FOOTER-------------- -->
+    <!-- -------- modal window ------ -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-button" data-modal-close>
+          <svg width="8" height="8" class="modal-close-btn-icon">
+            <use href="./images/icons.svg#icon-close-modal-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- -------- /modal window ------ -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
