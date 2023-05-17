@@ -667,14 +667,18 @@ color: #FFFFFF;
     pointer-events: none;
   }
   .modal{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
     width: 408px;
-    height: 584px;
+    min-height: 576px;
+
     background-color: #FCFCFC;
   }
   .modal-close-button{
@@ -690,9 +694,11 @@ color: #FFFFFF;
     height: 24px;
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding: 0;
+    cursor: pointer;
     
     background-color: #e7e9fc;
   }
@@ -700,9 +706,11 @@ color: #FFFFFF;
   .modal-close-button:focus{
     background-color: #404bbf;
     border: none;
-  }
-  .modal-close-btn-icon:hover,
-  .modal-close-btn-icon:focus{
     fill: #ffffff;
   }
+  .modal-close-btn-icon{
+    display: block;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
 /* ================= /MODAL WINDOW=================== */
